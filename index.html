@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <script src="app.js"></script>
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="Enter your city name">
+      <button><img src="/7-Weather-App/Weather-App/images/search.png" alt=""></button>
+    </div>
+    <div class="weather">
+      <!-- Weather icon -->
+      <img src="/7-Weather-App/Weather-App/images/rain.png" class="weather-icon" alt="Weather Icon">
+      <h1 class="temp">22°C</h1>
+      <h2 class="city">New York</h2>
+      <div class="details">
+        <div class="col">
+          <!-- Humidity icon -->
+          <img src="/7-Weather-App/Weather-App/images/humidity.png" alt="Humidity Icon">
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <!-- Wind icon -->
+          <img src="/7-Weather-App/Weather-App/images/wind.png" alt="Wind Icon">
+          <div>
+            <p class="wind">15 km/h</p>
+            <p>Wind</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
 </body>
+
 </html>

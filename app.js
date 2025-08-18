@@ -3,7 +3,7 @@ const searchButton = document.querySelector(".search button");
 const temperatureEl = document.querySelector(".temp");
 const cityEl = document.querySelector(".city");
 
-let defaultCity = "new york";
+let defaultCity = "";
 
 async function fetchWeather(cityName) {
     try {
@@ -27,7 +27,7 @@ fetchWeather(defaultCity);
 
 // Update weather when search button is clicked
 searchButton.addEventListener("click", function() {
-    var newCity = inputField.value.trim();
+    let newCity = inputField.value.trim();
 
     if (newCity !== "") {
         fetchWeather(newCity);
